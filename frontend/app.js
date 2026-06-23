@@ -3,7 +3,7 @@
 // Nếu deploy lên mạng, bạn hãy thay thế địa chỉ Render của bạn ở dòng dưới:
 const BACKEND_URL = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
     ? "http://localhost:8000"
-    : "https://trading-telegram-bot-uxwo.onrender.com"; // Điền domain Render của bạn khi deploy
+    : "https://tarot-backend-app.onrender.com"; // Điền domain Render của bạn khi deploy
 
 let tg = null;
 let initData = "";
@@ -33,9 +33,9 @@ function initTelegramWebApp() {
         tg = window.Telegram.WebApp;
         tg.ready();
         tg.expand(); // Mở rộng màn hình tối đa
-        
+
         initData = tg.initData || "";
-        
+
         // Đọc thông tin tên hiển thị từ Telegram
         const user = tg.initDataUnsafe?.user;
         if (user) {
@@ -60,7 +60,7 @@ async function fetchUserStatus() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ initData })
         });
-        
+
         const data = await response.json();
         if (data.ok) {
             updateEnergyUI(data.user.energy);
@@ -81,7 +81,7 @@ function updateEnergyUI(energyVal) {
     const badge = document.getElementById("energy-counter");
     const label = badge.querySelector(".energy-val");
     label.textContent = `${energyVal} Lượt`;
-    
+
     // Nếu hết điểm, làm hiệu ứng badge màu đỏ cảnh báo nhẹ
     if (energyVal === 0) {
         badge.style.borderColor = "rgba(244, 67, 54, 0.5)";
@@ -125,7 +125,7 @@ function setupEventListeners() {
 // 4. Bắt đầu quy trình chọn và rút bài Tarot
 function startTarotDrawFlow(category) {
     currentCategory = category;
-    
+
     // Đổi tên danh mục hiển thị
     const catNames = { daily: "Tổng Quan Ngày", love: "Tình Duyên", career: "Sự Nghiệp" };
     document.getElementById("current-category-name").textContent = catNames[category];
@@ -133,7 +133,7 @@ function startTarotDrawFlow(category) {
     // Vẽ bộ bài 6 lá úp mặt để người dùng chọn
     const deckWrapper = document.getElementById("deck-wrapper");
     deckWrapper.innerHTML = "";
-    
+
     for (let i = 0; i < 6; i++) {
         const card = document.createElement("div");
         card.className = "card-item";
@@ -160,7 +160,7 @@ async function handleCardSelection() {
         });
 
         const data = await response.json();
-        
+
         if (response.status === 403) {
             showError("Hết năng lượng! Hãy xem Ads để sạc thêm lượt.");
             return;
@@ -171,7 +171,7 @@ async function handleCardSelection() {
             const card = data.card;
             document.getElementById("card-name-text").textContent = card.name;
             document.getElementById("card-orientation-text").textContent = card.direction_vietnamese;
-            
+
             // Xoay ảnh/emoji nếu là chiều ngược
             const artBox = document.getElementById("card-art-box");
             if (card.direction === "reversed") {
@@ -213,7 +213,7 @@ function triggerAdsgramAd() {
     // ID Khối quảng cáo (Block ID) của bạn được Adsgram cấp sau khi bạn add bot vào nền tảng của họ.
     // Dưới đây là Block ID Test mặc định để bạn chạy thử nghiệm (luôn hoạt động để test).
     const blockId = "3711"; // Thay thế bằng ID thật của bạn sau khi đăng ký thành công
-    
+
     if (window.Adsgram) {
         const AdController = window.Adsgram.init({ blockId: blockId });
         showLoader(true);
