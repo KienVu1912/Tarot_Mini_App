@@ -70,6 +70,12 @@ def authenticate_user(init_data: str) -> dict:
     return user_info
 
 
+@app.get("/")
+def read_root():
+    """Đường dẫn gốc trả về trạng thái hoạt động chính thức"""
+    return {"status": "active", "message": "Tarot Backend API is running!", "health_check": "/health"}
+
+
 @app.get("/health")
 def health_check():
     """Health check endpoint cho Render"""
