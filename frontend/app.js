@@ -212,7 +212,7 @@ async function handleCardSelection() {
 function triggerAdsgramAd() {
     // ID Khối quảng cáo (Block ID) của bạn được Adsgram cấp sau khi bạn add bot vào nền tảng của họ.
     // Dưới đây là Block ID Test mặc định để bạn chạy thử nghiệm (luôn hoạt động để test).
-    const blockId = "3711"; // Thay thế bằng ID thật của bạn sau khi đăng ký thành công
+    const blockId = "35977"; // Thay thế bằng ID thật của bạn sau khi đăng ký thành công
 
     if (window.Adsgram) {
         const AdController = window.Adsgram.init({ blockId: blockId });
