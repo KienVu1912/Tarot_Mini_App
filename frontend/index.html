@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Tarot Daily Reading</title>
+    <!-- Nhúng SDK Telegram WebApp -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- Nhúng Adsgram SDK để kích hoạt quảng cáo video -->
+    <script src="https://adsgram.co/sdk/v1/ad-controller.js"></script>
+    <!-- Nhúng Google Fonts (Outfit & Playfair Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Khung Header hiển thị thông tin User & Năng lượng -->
+        <header class="glass-panel header-panel">
+            <div class="user-info">
+                <div class="avatar-placeholder" id="user-avatar">🔮</div>
+                <div class="user-meta">
+                    <span class="welcome-text">Xin chào,</span>
+                    <span class="user-name" id="user-display-name">Nhà Lữ Hành</span>
+                </div>
+            </div>
+            <div class="energy-badge" id="energy-counter">
+                <span class="energy-icon">⚡</span>
+                <span class="energy-val">--</span>
+            </div>
+        </header>
+
+        <!-- MÀN HÌNH 1: Trang chủ / Chọn kiểu trải bài -->
+        <main class="screen" id="home-screen">
+            <div class="intro-section">
+                <h1 class="title-main">Thông Điệp Tarot</h1>
+                <p class="subtitle">Lắng nghe trực giác và chọn khía cạnh bạn muốn chiêm nghiệm hôm nay</p>
+            </div>
+
+            <div class="category-list">
+                <button class="glass-button category-btn" data-category="daily">
+                    <span class="btn-emoji">🌌</span>
+                    <div class="btn-text">
+                        <h3>Tổng Quan Ngày</h3>
+                        <p>Dự đoán năng lượng và lời khuyên chung</p>
+                    </div>
+                </button>
+
+                <button class="glass-button category-btn" data-category="love">
+                    <span class="btn-emoji">💖</span>
+                    <div class="btn-text">
+                        <h3>Tình Duyên</h3>
+                        <p>Cảm xúc, kết nối và các mối quan hệ</p>
+                    </div>
+                </button>
+
+                <button class="glass-button category-btn" data-category="career">
+                    <span class="btn-emoji">💼</span>
+                    <div class="btn-text">
+                        <h3>Sự Nghiệp</h3>
+                        <p>Công việc, tài chính và định hướng</p>
+                    </div>
+                </button>
+            </div>
+
+            <div class="ads-section">
+                <button class="glass-button ads-btn" id="watch-ads-btn">
+                    <span class="btn-emoji">🎬</span>
+                    <div class="btn-text">
+                        <h3>Xem Ads nạp năng lượng</h3>
+                        <p>Nhận ngay +1 lượt rút bài miễn phí</p>
+                    </div>
+                </button>
+            </div>
+        </main>
+
+        <!-- MÀN HÌNH 2: Rút bài -->
+        <section class="screen hidden" id="draw-screen">
+            <div class="screen-header">
+                <button class="back-icon" id="draw-back-btn">⬅️ Quay lại</button>
+                <h2 class="category-title" id="current-category-name">Chọn Lá Bài</h2>
+            </div>
+            
+            <p class="prompt-text">Nhắm mắt lại, hít thở sâu và chọn một lá bài bên dưới</p>
+
+            <div class="deck-container">
+                <!-- Bộ bài Tarot úp mặt sẽ được render bằng JS ở đây -->
+                <div class="tarot-card-deck" id="deck-wrapper"></div>
+            </div>
+        </section>
+
+        <!-- MÀN HÌNH 3: Hiển thị kết quả lật bài -->
+        <section class="screen hidden" id="result-screen">
+            <div class="result-container">
+                <!-- Cấu trúc thẻ 3D lật bài -->
+                <div class="card-3d-wrapper">
+                    <div class="card-3d" id="tarot-card-reveal">
+                        <!-- Mặt sau lá bài -->
+                        <div class="card-face card-back">
+                            <div class="card-back-pattern"></div>
+                        </div>
+                        <!-- Mặt trước lá bài -->
+                        <div class="card-face card-front">
+                            <div class="card-border">
+                                <div class="card-header-symbol">★ ★ ★</div>
+                                <div class="card-art" id="card-art-box">
+                                    <span id="card-art-emoji">🔮</span>
+                                </div>
+                                <h2 class="card-name" id="card-name-text">THE FOOL</h2>
+                                <div class="card-orientation" id="card-orientation-text">Chiều xuôi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-details glass-panel">
+                    <h3 class="result-headline" id="result-meaning-title">Ý Nghĩa Lá Bài</h3>
+                    <div class="meaning-box">
+                        <p class="meaning-text" id="meaning-desc-text">Đang tải lời giải nghĩa...</p>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="glass-button action-btn primary" id="btn-back-home">Xác nhận & Quay lại</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading overlay -->
+        <div class="loading-overlay hidden" id="loader">
+            <div class="spinner"></div>
+            <p>Đang kết nối thế giới tâm linh...</p>
+        </div>
+    </div>
+</body>
+</html>

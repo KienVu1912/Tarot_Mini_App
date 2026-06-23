@@ -1,0 +1,398 @@
+[
+  {
+    "card_id": "major_0",
+    "name": "The Fool (Chàng Khờ)",
+    "type": "major",
+    "image_url": "assets/major_0.png",
+    "meanings": {
+      "upright": {
+        "general": "Khởi đầu mới, tự phát, tự do, niềm tin ngây thơ.",
+        "love": "Mối tình mới mẻ đầy bất ngờ, không ràng buộc, tự do khám phá.",
+        "career": "Cơ hội công việc mới đầy mạo hiểm nhưng tràn đầy năng lượng sáng tạo."
+      },
+      "reversed": {
+        "general": "Liều lĩnh, thiếu chuẩn bị, bốc đồng, trì hoãn.",
+        "love": "Sự vô trách nhiệm trong tình cảm, hành động bốc đồng gây tổn thương.",
+        "career": "Sự thiếu tính toán trong dự án mới dẫn đến rủi ro không đáng có."
+      }
+    }
+  },
+  {
+    "card_id": "major_1",
+    "name": "The Magician (Nhà Ảo Thuật)",
+    "type": "major",
+    "image_url": "assets/major_1.png",
+    "meanings": {
+      "upright": {
+        "general": "Ý chí mạnh mẽ, khả năng sáng tạo, tập trung, hành động để đạt mục tiêu.",
+        "love": "Sức hút cá nhân cực kỳ lớn, chủ động thể hiện tình cảm và thu hút đối phương.",
+        "career": "Kỹ năng chuyên môn xuất sắc, biến ý tưởng thành hiện thực, thăng tiến nhanh."
+      },
+      "reversed": {
+        "general": "Thao túng, tiềm năng chưa được khai phá, lừa lọc, ảo tưởng sức mạnh.",
+        "love": "Sự giả dối, thao túng tâm lý hoặc thiếu chân thành trong mối quan hệ.",
+        "career": "Lãng phí tài năng, có ý đồ không tốt hoặc gặp cản trở do thiếu trung thực."
+      }
+    }
+  },
+  {
+    "card_id": "major_2",
+    "name": "The High Priestess (Nữ Tư Tế)",
+    "type": "major",
+    "image_url": "assets/major_2.png",
+    "meanings": {
+      "upright": {
+        "general": "Trực giác nhạy bén, tiềm thức, tri thức bí ẩn, sự tĩnh lặng.",
+        "love": "Tình yêu sâu sắc nhưng thầm kín, hãy tin vào trực giác của bản thân khi lựa chọn.",
+        "career": "Cần kiên nhẫn, quan sát kỹ lưỡng và tin vào cảm nhận bên trong trước khi ký kết."
+      },
+      "reversed": {
+        "general": "Bỏ qua trực giác, nông cạn, bí mật bị tiết lộ, áp lực tinh thần.",
+        "love": "Có những bí mật bị che giấu hoặc bạn đang phớt lờ những dấu hiệu bất thường (red flags).",
+        "career": "Thông tin thiếu minh bạch, quyết định vội vã dẫn đến hiểu lầm với đồng nghiệp."
+      }
+    }
+  },
+  {
+    "card_id": "major_3",
+    "name": "The Empress (Nữ Hoàng)",
+    "type": "major",
+    "image_url": "assets/major_3.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự trù phú, sinh sôi nảy nở, thiên nhiên, tình mẫu tử, sự chăm sóc.",
+        "love": "Tình yêu ngọt ngào, ấm áp, có khả năng tiến tới hôn nhân hoặc tin vui về con cái.",
+        "career": "Dự án gặt hái thành quả lớn, môi trường làm việc sáng tạo và đầy hỗ trợ."
+      },
+      "reversed": {
+        "general": "Sự lệ thuộc, thiếu sáng tạo, áp đặt, hoang phí.",
+        "love": "Sự kiểm soát quá mức hoặc bỏ bê bản thân vì chiều chuộng đối phương.",
+        "career": "Công việc gặp bế tắc do thiếu cảm hứng hoặc chi tiêu vượt quá ngân sách dự kiến."
+      }
+    }
+  },
+  {
+    "card_id": "major_4",
+    "name": "The Emperor (Hoàng Đế)",
+    "type": "major",
+    "image_url": "assets/major_4.png",
+    "meanings": {
+      "upright": {
+        "general": "Quyền lực, trật tự, kỷ luật, sự bảo hộ vững chãi, lý trí.",
+        "love": "Một tình yêu nghiêm túc, có tính định hướng dài lâu, đối phương là chỗ dựa vững chắc.",
+        "career": "Khẳng định vị trí lãnh đạo, thiết lập kỷ luật và kiểm soát tốt tiến độ công việc."
+      },
+      "reversed": {
+        "general": "Độc đoán, kiểm soát quá đà, bất lực trước luật lệ, thiếu linh hoạt.",
+        "love": "Sự gia trưởng, độc đoán của đối phương làm bạn ngột ngạt và mệt mỏi.",
+        "career": "Lạm dụng quyền lực hoặc bất đồng lớn với cấp trên do quy định quá khắt khe."
+      }
+    }
+  },
+  {
+    "card_id": "major_5",
+    "name": "The Hierophant (Thầy Tư Tế)",
+    "type": "major",
+    "image_url": "assets/major_5.png",
+    "meanings": {
+      "upright": {
+        "general": "Truyền thống, giáo dục, niềm tin tôn giáo, sự định hướng đạo đức.",
+        "love": "Mối quan hệ cam kết cao (đính hôn, kết hôn), tình yêu đi theo chuẩn mực gia đình.",
+        "career": "Thời điểm học hỏi từ tiền bối, tuân thủ các quy chuẩn cũ mang lại sự an toàn."
+      },
+      "reversed": {
+        "general": "Nổi loạn, phá vỡ quy chuẩn, giáo điều, tự do tư tưởng.",
+        "love": "Bất đồng về quan điểm sống, lối sống truyền thống gặp xung đột với mong muốn tự do.",
+        "career": "Cần đổi mới phương pháp làm việc cũ kỹ, không nên quá rập khuôn theo lối mòn."
+      }
+    }
+  },
+  {
+    "card_id": "major_6",
+    "name": "The Lovers (Tình Nhân)",
+    "type": "major",
+    "image_url": "assets/major_6.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự hòa hợp, kết nối sâu sắc, tình yêu, lựa chọn quan trọng từ trái tim.",
+        "love": "Tình yêu thăng hoa, sự gắn kết tâm hồn sâu sắc và chia sẻ mọi giá trị sống.",
+        "career": "Sự hợp tác ăn ý trong công việc, thời điểm đưa ra quyết định lựa chọn dự án lớn."
+      },
+      "reversed": {
+        "general": "Mất cân bằng, xung đột nội tâm, rạn nứt mối quan hệ, lựa chọn sai lầm.",
+        "love": "Xung đột, thiếu sự đồng điệu hoặc đối mặt với cám dỗ bên ngoài mối quan hệ.",
+        "career": "Bất đồng trong đội ngũ làm việc, dự án bị chia rẽ ý kiến hoặc ký kết không suôn sẻ."
+      }
+    }
+  },
+  {
+    "card_id": "major_7",
+    "name": "The Chariot (Cỗ Xe Chiến Thắng)",
+    "type": "major",
+    "image_url": "assets/major_7.png",
+    "meanings": {
+      "upright": {
+        "general": "Ý chí quyết tâm, vượt qua nghịch cảnh, chiến thắng bằng kỷ luật thép.",
+        "love": "Vượt qua các rào cản địa lý hoặc gia đình để đến bên nhau; chủ động theo đuổi.",
+        "career": "Đạt được mục tiêu công việc nhờ sự kiên trì, kiểm soát tốt các luồng công việc phức tạp."
+      },
+      "reversed": {
+        "general": "Mất phương hướng, thiếu kiểm soát, hung hăng vô ích, thất bại do nôn nóng.",
+        "love": "Mất kiểm soát cảm xúc, dễ xảy ra tranh cãi nảy lửa do cái tôi của hai bên quá lớn.",
+        "career": "Dự án lệch hướng, mất động lực phấn đấu hoặc gặp thất bại do thiếu chuẩn bị lộ trình."
+      }
+    }
+  },
+  {
+    "card_id": "major_8",
+    "name": "Strength (Sức Mạnh)",
+    "type": "major",
+    "image_url": "assets/major_8.png",
+    "meanings": {
+      "upright": {
+        "general": "Sức mạnh nội tâm, lòng dũng cảm, sự kiên nhẫn, thuần hóa bản năng dã thú.",
+        "love": "Tình yêu bền bỉ, kiên nhẫn thấu hiểu và xoa dịu những vết thương lòng của nhau.",
+        "career": "Giải quyết các khủng hoảng công việc bằng sự khéo léo và bình tĩnh tuyệt đối."
+      },
+      "reversed": {
+        "general": "Yếu đuối, nghi ngờ bản thân, mất bình tĩnh, bộc phát cảm xúc tiêu cực.",
+        "love": "Sự thiếu tự tin khiến mối quan hệ rạn nứt, hoặc dễ nổi nóng vô cớ với đối phương.",
+        "career": "Gặp áp lực lớn dẫn đến nản lòng, nghi ngờ năng lực bản thân trước thử thách."
+      }
+    }
+  },
+  {
+    "card_id": "major_9",
+    "name": "The Hermit (Ẩn Sĩ)",
+    "type": "major",
+    "image_url": "assets/major_9.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự chiêm nghiệm, tìm kiếm chân lý bên trong, cô độc thông thái, tự vấn.",
+        "love": "Thời gian dành cho bản thân để nhìn nhận lại mong muốn thực sự trước khi yêu.",
+        "career": "Tự nghiên cứu, tập trung chuyên môn sâu, tránh các xô bồ tranh chấp văn phòng."
+      },
+      "reversed": {
+        "general": "Sự cô lập, xa lánh xã hội quá mức, từ chối lời khuyên, cố chấp.",
+        "love": "Cô đơn kéo dài do tự đóng chặt lòng mình, hoặc thờ ơ trong mối quan hệ hiện tại.",
+        "career": "Làm việc độc lập quá đà dẫn đến thiếu kết nối thông tin với toàn đội nhóm."
+      }
+    }
+  },
+  {
+    "card_id": "major_10",
+    "name": "Wheel of Fortune (Vòng Quay Số Phận)",
+    "type": "major",
+    "image_url": "assets/major_10.png",
+    "meanings": {
+      "upright": {
+        "general": "Bước ngoặt định mệnh, may mắn, sự thay đổi tích cực, nhân quả.",
+        "love": "Duyên nợ bất ngờ đưa hai bạn gặp nhau, mối quan hệ chuyển biến sang giai đoạn mới đầy tích cực.",
+        "career": "Cơ hội thăng tiến bất ngờ, vận may tài chính gõ cửa, dự án đón làn gió mới."
+      },
+      "reversed": {
+        "general": "Vận xui tạm thời, kháng cự lại sự thay đổi, bài học nhân quả lặp lại.",
+        "love": "Gặp lại những rắc rối cũ trong tình cảm, cần chấp nhận buông bỏ để tiến lên.",
+        "career": "Gặp khó khăn khách quan ngoài tầm kiểm soát, cần bình tĩnh chờ đợi vòng quay đi lên."
+      }
+    }
+  },
+  {
+    "card_id": "major_11",
+    "name": "Justice (Công Lý)",
+    "type": "major",
+    "image_url": "assets/major_11.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự công bằng, sự thật, luật nhân quả, quyết định khách quan bằng lý trí.",
+        "love": "Sự tôn trọng lẫn nhau, công bằng trong tình cảm; giải quyết dứt điểm các vướng mắc cũ.",
+        "career": "Ký kết hợp đồng thành công, phán quyết có lợi, sự minh bạch trong tài chính công việc."
+      },
+      "reversed": {
+        "general": "Bất công, thiên vị, chối bỏ trách nhiệm, rắc rối pháp lý.",
+        "love": "Cảm giác bị đối xử bất công trong mối quan hệ, thiếu trung thực dẫn đến mất niềm tin.",
+        "career": "Dự án gặp bất công, rắc rối giấy tờ pháp lý hoặc tranh chấp tài chính thiếu minh bạch."
+      }
+    }
+  },
+  {
+    "card_id": "major_12",
+    "name": "The Hanged Man (Kẻ Treo)",
+    "type": "major",
+    "image_url": "assets/major_12.png",
+    "meanings": {
+      "upright": {
+        "general": "Tạm dừng chân, góc nhìn mới, sự hy sinh tự nguyện, buông bỏ để nhận lại.",
+        "love": "Cần thời gian lắng lại để nhìn nhận mối quan hệ dưới một góc nhìn hoàn toàn khác.",
+        "career": "Dự án tạm thời chững lại, đây là lúc lên kế hoạch và nhìn nhận lại vấn đề."
+      },
+      "reversed": {
+        "general": "Trì trệ vô ích, kháng cự buông bỏ, hy sinh vô ích, bế tắc tư duy.",
+        "love": "Sự hy sinh mù quáng chịu đựng mối quan hệ độc hại mà không dám dứt bỏ.",
+        "career": "Cố chấp bám víu phương án cũ bị lỗi thời khiến công việc dậm chân tại chỗ."
+      }
+    }
+  },
+  {
+    "card_id": "major_13",
+    "name": "Death (Tử Thần)",
+    "type": "major",
+    "image_url": "assets/major_13.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự kết thúc, chuyển giao, lột xác, khởi đầu mới từ đống tro tàn.",
+        "love": "Kết thúc một mối quan hệ không còn phù hợp để mở lòng đón nhận hạnh phúc mới.",
+        "career": "Chấm dứt công việc cũ lỗi thời, chuyển đổi định hướng sự nghiệp hoàn toàn mới."
+      },
+      "reversed": {
+        "general": "Kháng cự sự thay đổi, sợ hãi cái chết/sự kết thúc, kéo dài sự đau khổ.",
+        "love": "Cố níu kéo mối quan hệ đã nguội lạnh khiến cả hai cùng mệt mỏi tổn thương.",
+        "career": "Sợ bước ra khỏi vùng an toàn nên cố chịu đựng công việc áp lực không có tương lai."
+      }
+    }
+  },
+  {
+    "card_id": "major_14",
+    "name": "Temperance (Tiết Độ)",
+    "type": "major",
+    "image_url": "assets/major_14.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự cân bằng, trung dung, kiên nhẫn, hòa hợp, chữa lành tâm hồn.",
+        "love": "Tình yêu bình yên, hòa hợp và thấu hiểu sâu sắc; hai bên bổ trợ khuyết điểm cho nhau.",
+        "career": "Giải quyết công việc êm thấm, dung hòa tốt các ý kiến trái chiều trong nhóm."
+      },
+      "reversed": {
+        "general": "Mất cân bằng, thái quá, thiếu kiên nhẫn, xung đột nội tại.",
+        "love": "Sự bất hòa, mất cân đối trong việc cho đi và nhận lại tình cảm từ hai phía.",
+        "career": "Phân bổ thời gian làm việc không hợp lý dẫn đến căng thẳng và quá tải công việc."
+      }
+    }
+  },
+  {
+    "card_id": "major_15",
+    "name": "The Devil (Ác Quỷ)",
+    "type": "major",
+    "image_url": "assets/major_15.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự ràng buộc, cám dỗ vật chất, ám ảnh, thói quen độc hại, mất tự do.",
+        "love": "Mối quan hệ mang tính chiếm hữu cao, hấp dẫn mãnh liệt về thể xác nhưng thiếu lành mạnh.",
+        "career": "Bị cuốn vào vòng xoáy kiếm tiền bất chấp, hoặc bị trói buộc bởi hợp đồng bất lợi."
+      },
+      "reversed": {
+        "general": "Sự giải thoát, nhận ra sự ràng buộc, từ bỏ thói quen xấu, tự do.",
+        "love": "Dũng cảm bước ra khỏi mối quan hệ phụ thuộc, độc hại để tìm lại tự do cá nhân.",
+        "career": "Thoát khỏi công việc bóc lột hoặc trả hết các khoản nợ nần ràng buộc sự nghiệp."
+      }
+    }
+  },
+  {
+    "card_id": "major_16",
+    "name": "The Tower (Tòa Tháp)",
+    "type": "major",
+    "image_url": "assets/major_16.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự sụp đổ bất ngờ, biến động lớn, phá vỡ ảo tưởng, thức tỉnh đột ngột.",
+        "love": "Xung đột lớn nổ ra bất ngờ làm thay đổi hoàn toàn mối quan hệ; sự chia vỡ đột ngột.",
+        "career": "Biến động nhân sự lớn, dự án bị hủy đột xuất, cơ cấu lại toàn bộ tổ chức."
+      },
+      "reversed": {
+        "general": "Tránh được thảm họa trong gang tấc, trì hoãn sự sụp đổ tất yếu, sợ hãi biến động.",
+        "love": "Cố gắng né tránh mâu thuẫn lớn nhưng bản chất mối quan hệ vẫn đang rạn nứt từ bên trong.",
+        "career": "Cố níu giữ một dự án đang thua lỗ nặng nề thay vì chấp nhận buông tay làm lại."
+      }
+    }
+  },
+  {
+    "card_id": "major_17",
+    "name": "The Star (Ngôi Sao)",
+    "type": "major",
+    "image_url": "assets/major_17.png",
+    "meanings": {
+      "upright": {
+        "general": "Hy vọng, niềm tin phục hồi, sự chữa lành, sự định hướng tâm linh tích cực.",
+        "love": "Thời kỳ hàn gắn tổn thương cũ, mở lòng đón nhận tình yêu đầy lạc quan và tin tưởng.",
+        "career": "Tìm lại cảm hứng làm việc, định hướng sự nghiệp rõ ràng và gặp nhiều may mắn."
+      },
+      "reversed": {
+        "general": "Thất vọng, mất niềm tin, sự bế tắc tạm thời, thiếu cảm hứng sống.",
+        "love": "Cảm giác tự ti hoặc thất vọng vì kỳ vọng quá nhiều vào đối phương.",
+        "career": "Mất phương hướng trong sự nghiệp, cảm thấy công việc hiện tại không có tương lai."
+      }
+    }
+  },
+  {
+    "card_id": "major_18",
+    "name": "The Moon (Mặt Trăng)",
+    "type": "major",
+    "image_url": "assets/major_18.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự bất an, ảo ảnh, nỗi sợ tiềm ẩn, bí mật che giấu, trực giác mờ mịt.",
+        "love": "Sự nghi ngờ, bất an vô cớ hoặc sự xuất hiện của những hiểu lầm chưa được làm rõ.",
+        "career": "Thông tin công việc mập mờ, cẩn thận kẻo bị lừa đảo hoặc đối tác giấu thông tin."
+      },
+      "reversed": {
+        "general": "Sự thật phơi bày, giải tỏa nỗi lo âu, vượt qua nỗi sợ, trực giác sáng tỏ.",
+        "love": "Bí mật được làm sáng tỏ, hóa giải mọi hoài nghi và hiểu lầm bấy lâu nay.",
+        "career": "Khắc phục được những bất ổn ngầm, các kế hoạch khuất tất bị đưa ra ánh sáng."
+      }
+    }
+  },
+  {
+    "card_id": "major_19",
+    "name": "The Sun (Mặt Trời)",
+    "type": "major",
+    "image_url": "assets/major_19.png",
+    "meanings": {
+      "upright": {
+        "general": "Thành công rực rỡ, niềm vui, sự ấm áp, tràn đầy sức sống và năng lượng.",
+        "love": "Tình yêu rạng rỡ, hạnh phúc viên mãn, sự chân thành và cởi mở hoàn toàn từ hai phía.",
+        "career": "Đạt được vinh quang lớn, thăng chức, tăng lương hoặc dự án thành công ngoài mong đợi."
+      },
+      "reversed": {
+        "general": "Niềm vui bị trì hoãn, sự tự cao thái quá, thành công nhỏ chưa trọn vẹn.",
+        "love": "Tình yêu vẫn tốt đẹp nhưng thiếu đi chút nhiệt huyết hoặc cái tôi quá cao gây xa cách.",
+        "career": "Công việc tiến triển tốt nhưng bạn cần khiêm tốn hơn để tránh bị đồng nghiệp đố kỵ."
+      }
+    }
+  },
+  {
+    "card_id": "major_20",
+    "name": "Judgement (Phán Xét)",
+    "type": "major",
+    "image_url": "assets/major_20.png",
+    "meanings": {
+      "upright": {
+        "general": "Tiếng gọi nội tâm, sự phán quyết, sự tha thứ, thức tỉnh tâm linh lớn.",
+        "love": "Thời điểm đưa ra quyết định quan trọng về tương lai mối quan hệ; sự tha thứ cho lỗi lầm cũ.",
+        "career": "Đánh giá lại con đường sự nghiệp, nhận ra sứ mệnh thực sự và thay đổi công việc."
+      },
+      "reversed": {
+        "general": "Nghi ngờ bản thân, từ chối tiếng gọi lương tâm, trì hoãn quyết định, dằn vặt.",
+        "love": "Không dám đối mặt với sự thật, dằn vặt về quá khứ khiến mối quan hệ bế tắc.",
+        "career": "Tránh né những quyết định thay đổi cần thiết, sợ hãi bị đánh giá năng lực."
+      }
+    }
+  },
+  {
+    "card_id": "major_21",
+    "name": "The World (Thế Giới)",
+    "type": "major",
+    "image_url": "assets/major_21.png",
+    "meanings": {
+      "upright": {
+        "general": "Sự hoàn thành viên mãn, kết thúc chu kỳ thành công, sự hòa nhập, tự do.",
+        "love": "Cái kết viên mãn cho tình yêu (hôn nhân), hạnh phúc tròn đầy trọn vẹn.",
+        "career": "Dự án hoàn thành xuất sắc, đạt tới đỉnh cao sự nghiệp, được công nhận rộng rãi."
+      },
+      "reversed": {
+        "general": "Thiếu bước cuối cùng để hoàn hảo, mục tiêu dang dở, trì trệ trước vạch đích.",
+        "love": "Mối quan hệ tốt nhưng vẫn có cảm giác thiếu một chút gì đó để gắn kết trọn vẹn.",
+        "career": "Dự án gần như thành công nhưng gặp trục trặc nhỏ ở khâu bàn giao cuối cùng."
+      }
+    }
+  }
+]

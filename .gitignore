@@ -1,0 +1,17 @@
+# Loại bỏ cơ sở dữ liệu SQLite cục bộ (tránh ghi đè khi deploy)
+*.db
+*.db-journal
+
+# Loại bỏ các file python chạy ngầm và thư mục ảo
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env
+
+# Loại bỏ các thư mục cấu hình của IDE
+.vscode/
+.idea/

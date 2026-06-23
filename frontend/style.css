@@ -1,0 +1,508 @@
+/* Reset cơ bản và các biến CSS thiết lập hệ thống thiết kế */
+:root {
+    --bg-gradient: radial-gradient(circle at 50% 30%, #1a0b2e 0%, #0c051a 60%, #05020a 100%);
+    --panel-bg: rgba(255, 255, 255, 0.05);
+    --panel-border: rgba(255, 255, 255, 0.1);
+    --panel-blur: blur(15px);
+    
+    --text-primary: #f0e6ff;
+    --text-secondary: #b39ddb;
+    --accent-gold: #ffd700;
+    --accent-purple: #9c27b0;
+    --accent-glow: 0 0 15px rgba(156, 39, 176, 0.6);
+    --gold-glow: 0 0 15px rgba(255, 215, 0, 0.5);
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg-gradient);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Thùng chứa chính thích ứng tốt với mọi màn hình điện thoại di động */
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Khung Glassmorphism Panel chung */
+.glass-panel {
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    backdrop-filter: var(--panel-blur);
+    -webkit-backdrop-filter: var(--panel-blur);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Header Panel hiển thị Avatar và Năng lượng */
+.header-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 25px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-purple), #5e35b1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: var(--accent-glow);
+}
+
+.user-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text {
+    font-size: 11px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.user-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.energy-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: var(--gold-glow);
+    font-weight: 600;
+}
+
+.energy-icon {
+    font-size: 16px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+/* Định nghĩa màn hình ứng dụng */
+.screen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Màn hình Trang Chủ */
+.intro-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-main {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #fff 30%, #e0b0ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* Danh sách nút bấm chọn trải bài */
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+/* Nút bấm hiệu ứng kính mờ ảo (Glass Button) */
+.glass-button {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--panel-border);
+    border-radius: 16px;
+    padding: 16px;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+    outline: none;
+}
+
+.glass-button:hover, .glass-button:active {
+    background: rgba(156, 39, 176, 0.1);
+    border-color: rgba(156, 39, 176, 0.4);
+    box-shadow: var(--accent-glow);
+    transform: translateY(-2px);
+}
+
+.btn-emoji {
+    font-size: 28px;
+    background: rgba(255, 255, 255, 0.05);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.btn-text h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.btn-text p {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+/* Nút bấm quảng cáo */
+.ads-btn {
+    border-color: rgba(255, 215, 0, 0.3);
+    background: rgba(255, 215, 0, 0.03);
+}
+
+.ads-btn:hover, .ads-btn:active {
+    background: rgba(255, 215, 0, 0.1);
+    border-color: var(--accent-gold);
+    box-shadow: var(--gold-glow);
+}
+
+/* Màn hình Rút bài */
+.screen-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.back-icon {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.category-title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+}
+
+.prompt-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Thùng xếp bộ bài Tarot */
+.deck-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarot-card-deck {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 360px;
+}
+
+/* Thiết kế lá bài úp mặt */
+.card-item {
+    aspect-ratio: 2 / 3.5;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition-smooth);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card-item::before {
+    content: "★";
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+}
+
+.card-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    border-color: rgba(156, 39, 176, 0.5);
+    box-shadow: 0 8px 20px rgba(156, 39, 176, 0.4);
+}
+
+/* Màn hình kết quả lật bài 3D */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Wrapper thiết lập khoảng nhìn 3D */
+.card-3d-wrapper {
+    perspective: 1000px;
+    width: 180px;
+    height: 315px;
+    margin: 10px auto;
+}
+
+/* Khung 3D chính của thẻ bài */
+.card-3d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 12px;
+}
+
+/* Trạng thái đã lật mặt trước ra */
+.card-3d.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Thuộc tính chung cho 2 mặt lá bài */
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Thiết kế mặt sau */
+.card-back {
+    background: #140526;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-back-pattern {
+    width: 85%;
+    height: 90%;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: 8px;
+    background-image: 
+        radial-gradient(circle, rgba(255,215,0,0.1) 1px, transparent 1px),
+        linear-gradient(45deg, transparent 49%, rgba(255,215,0,0.05) 50%, transparent 51%);
+    background-size: 16px 16px;
+    position: relative;
+}
+
+.card-back-pattern::after {
+    content: "🔮";
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 8px rgba(156, 39, 176, 0.5));
+}
+
+/* Thiết kế mặt trước */
+.card-front {
+    background: linear-gradient(135deg, #1b0a3a 0%, #0d041e 100%);
+    transform: rotateY(180deg); /* Xoay sẵn để hiển thị khi lật */
+    padding: 10px;
+    border-color: rgba(255, 215, 0, 0.4);
+}
+
+.card-border {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 6px;
+    justify-content: space-between;
+}
+
+.card-header-symbol {
+    font-size: 10px;
+    color: var(--accent-gold);
+    letter-spacing: 2px;
+}
+
+.card-art {
+    width: 110px;
+    height: 140px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#card-art-emoji {
+    font-size: 55px;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2));
+}
+
+.card-name {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    color: var(--accent-gold);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-orientation {
+    font-size: 9px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: var(--text-secondary);
+}
+
+/* Thẻ giải nghĩa kết quả dưới lá bài */
+.result-details {
+    width: 100%;
+    padding: 20px;
+}
+
+.result-headline {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    color: var(--accent-gold);
+    margin-bottom: 12px;
+    border-left: 3px solid var(--accent-gold);
+    padding-left: 8px;
+}
+
+.meaning-text {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Khối nút hành động */
+.action-buttons {
+    width: 100%;
+}
+
+.action-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+    font-weight: 600;
+}
+
+.action-btn.primary {
+    background: linear-gradient(135deg, var(--accent-purple) 0%, #5e35b1 100%);
+    border: none;
+    box-shadow: var(--accent-glow);
+}
+
+.action-btn.primary:hover {
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.8);
+}
+
+/* Vòng xoay Loading */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(12, 5, 26, 0.9);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.spinner {
+    width: 45px;
+    height: 45px;
+    border: 3px solid rgba(156, 39, 176, 0.2);
+    border-top: 3px solid var(--accent-purple);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    box-shadow: var(--accent-glow);
+}
+
+/* Keyframes hiệu ứng */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    from { transform: scale(1); filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3)); }
+    to { transform: scale(1.15); filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7)); }
+}
